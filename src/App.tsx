@@ -11,11 +11,7 @@ function App() {
   return (
     <div className="app">
       <Typography variant="h4">Tasks</Typography>
-      <TaskForm addTask={(task) => {
-        if (task) {
-          addTask(task);
-        }
-      }} />
+      <TaskForm addTask={addTask} />
       <TaskList tasks={tasks} />
     </div>
   );
